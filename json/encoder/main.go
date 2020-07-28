@@ -23,7 +23,7 @@ func main() {
 	dec := json.NewDecoder(strings.NewReader(jsonStream))
 	for {
 		var m Message
-		if err := dec.Decode(&m) ; err == io.EOF {
+		if err := dec.Decode(&m); err == io.EOF {
 			break
 		} else if err != nil {
 			log.Fatal(err)
@@ -32,5 +32,3 @@ func main() {
 		fmt.Printf("%s: %s \n", m.Name, m.Text)
 	}
 }
-
-
