@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"goAc/rpc/rpc_objects"
+	"goAc/base/rpc/rpc_objects"
 	"log"
 	"net/rpc"
 )
