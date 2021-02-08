@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	Select()
+	//Select()
 	//pipline := make(chan int)
 	//
 	//go func() {
@@ -15,4 +15,5 @@ func main() {
 	//}()
 	//
 	//time.Sleep(time.Second)
+	Do()
 }
