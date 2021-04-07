@@ -4,21 +4,21 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"goAc/gin-example/pkg/setting"
+	"goAc/FiredFish/gin-example/pkg/setting"
 	"log"
 )
 
 var db *gorm.DB
 
-type Mode struct {
-	ID         int `gorm:"primary_key" json:"id"`
-	CreateOn   int `json:"created_on"`
+type Model struct {
+	ID int `gorm:"primary_key" json:"id"`
+	CreatedOn int `json:"created_on"`
 	ModifiedOn int `json:"modified_on"`
 }
 
 func init() {
 	var (
-		err                                               error
+		err error
 		dbType, dbName, user, password, host, tablePrefix string
 	)
 
@@ -44,8 +44,8 @@ func init() {
 		log.Println(err)
 	}
 
-	gorm.DefaultTableNameHandler = func(db *gorm.DB, defaultTableName string) string {
-		return tablePrefix + defaultTableName
+	gorm.DefaultTableNameHandler = func (db *gorm.DB, defaultTableName string) string  {
+		return tablePrefix + defaultTableName;
 	}
 
 	db.SingularTable(true)
