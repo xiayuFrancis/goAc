@@ -7,7 +7,8 @@ require (
 	github.com/PuerkitoBio/goquery v1.6.1
 	github.com/antchfx/htmlquery v1.2.3 // indirect
 	github.com/antchfx/xmlquery v1.3.3 // indirect
-	github.com/astaxie/beego v1.12.3 // indirect
+	github.com/astaxie/beego v1.12.3
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-ini/ini v1.62.0
 	github.com/go-playground/validator/v10 v10.3.0 // indirect
