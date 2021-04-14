@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-
+	echo2()
 }
 
 func echo1()  {
 	var s, sep string
-	for i:= 1; i< len(os.Args); i++ {
+	for i:= 0; i< len(os.Args); i++ {
 		s += sep + os.Args[i]
 		sep = " "
 	}
@@ -20,7 +20,7 @@ func echo1()  {
 
 func echo2() {
 	s, sep := "", ""
-	for _, arg := range os.Args[1:] {
+	for _, arg := range os.Args[:] {
 		s += sep + arg
 		sep = " "
 	}
