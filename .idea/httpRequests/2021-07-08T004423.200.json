@@ -1,0 +1,46 @@
+{
+  "took": 4,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 3,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "imooc",
+        "_type": "cource",
+        "_id": "AXqB2bMqGsH664v6zGfC",
+        "_score": 1.0,
+        "_source": {
+          "name": "python",
+          "instuctor": "ccmouse"
+        }
+      },
+      {
+        "_index": "imooc",
+        "_type": "cource",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "name": "c#",
+          "instuctor": "ccmouse"
+        }
+      },
+      {
+        "_index": "imooc",
+        "_type": "cource",
+        "_id": "1",
+        "_score": 1.0,
+        "_source": {
+          "name": "golang",
+          "instuctor": "ccmouse"
+        }
+      }
+    ]
+  }
+}

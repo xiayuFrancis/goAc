@@ -1,0 +1,13 @@
+{
+  "_index": "imooc",
+  "_type": "cource",
+  "_id": "AXqB2bMqGsH664v6zGfC",
+  "_version": 1,
+  "result": "created",
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
+  },
+  "created": true
+}

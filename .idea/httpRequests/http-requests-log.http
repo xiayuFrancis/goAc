@@ -1,0 +1,164 @@
+GET http://localhost:9200/imooc/cource/_mapping
+Accept: application/json
+
+<> 2021-07-08T004746.200.json
+
+###
+
+GET http://localhost:9200/imooc/cource/_search
+Accept: application/json
+
+<> 2021-07-08T004609.200.json
+
+###
+
+POST http://localhost:9200/imooc/cource/2
+Content-Type: application/json
+
+{
+  "name": "c#",
+  "instuctor": "ccmouse",
+  "url": "https://c#.org"
+}
+
+<> 2021-07-08T004601.200.json
+
+###
+
+GET http://localhost:9200/imooc/cource/_search
+Accept: application/json
+
+<> 2021-07-08T004423.200.json
+
+###
+
+GET http://localhost:9200/imooc/cource/_search?q=ccmouse
+Accept: application/json
+
+<> 2021-07-08T004340.200.json
+
+###
+
+PUT http://localhost:9200/imooc/cource/2
+Content-Type: application/json
+
+{
+  "name": "c#",
+  "instuctor": "ccmouse"
+}
+
+<> 2021-07-08T004323.200.json
+
+###
+
+GET http://localhost:9200/imooc/cource/_search?q=ccmouse
+Accept: application/json
+
+<> 2021-07-08T004254.200.json
+
+###
+
+POST http://localhost:9200/imooc/cource/
+Content-Type: application/json
+
+{
+  "name": "python",
+  "instuctor": "ccmouse"
+}
+
+<> 2021-07-08T004245.201.json
+
+###
+
+GET http://localhost:9200/imooc/cource/_search?q=ccmouse
+Accept: application/json
+
+<> 2021-07-08T004133.200.json
+
+###
+
+GET http://localhost:9200/imooc/cource/_search?q=cc
+Accept: application/json
+
+<> 2021-07-08T004124.200.json
+
+###
+
+GET http://localhost:9200/imooc/cource/_search?q=golang
+Accept: application/json
+
+<> 2021-07-08T004011.200.json
+
+###
+
+GET http://localhost:9200/imooc/cource/_search
+Accept: application/json
+
+<> 2021-07-08T003808.200.json
+
+###
+
+GET http://localhost:9200/imooc/cource/2
+Accept: application/json
+
+<> 2021-07-08T003714.200.json
+
+###
+
+PUT http://localhost:9200/imooc/cource/2
+Content-Type: application/json
+
+{
+  "name": "c#",
+  "instuctor": "ccmouse"
+}
+
+<> 2021-07-08T003656.201.json
+
+###
+
+PUT http://localhost:9200/imooc/cource/1/2
+Content-Type: application/json
+
+{
+  "name": "golang",
+  "instuctor": "ccmouse"
+}
+
+<> 2021-07-08T003645.400.txt
+
+###
+
+GET http://localhost:9200/imooc/cource/1
+Accept: application/json
+
+<> 2021-07-08T003626.200.json
+
+###
+
+GET http://localhost:9200
+Accept: application/json
+
+<> 2021-07-08T003556.200.json
+
+###
+
+PUT http://localhost:9200/imooc/cource/1
+Content-Type: application/json
+
+{
+  "name": "golang",
+  "instuctor": "ccmouse"
+}
+
+<> 2021-07-08T003448.201.json
+
+###
+
+GET http://localhost:9200
+Accept: application/json
+
+<> 2021-07-08T003203.200.json
+
+###
+
