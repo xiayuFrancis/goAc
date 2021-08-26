@@ -1,7 +1,6 @@
-package main
+package fibfunc
 
 import (
-	"bufio"
 	"fmt"
 	"io"
 	"strings"
@@ -24,17 +23,4 @@ func (i intGen) Read(p []byte) (n int, err error) {
 	}
 	s := fmt.Sprintf("%d\n", next)
 	return strings.NewReader(s).Read(p)
-}
-
-func printContent(reader io.Reader) {
-	scanner := bufio.NewScanner(reader)
-	for scanner.Scan() {
-		fmt.Println(scanner.Text())
-	}
-}
-
-func main() {
-	f := Fibonacci()
-	printContent(f)
-
 }
